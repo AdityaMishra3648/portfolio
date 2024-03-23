@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <style>
+      /* Modal container */
+      .modal-container {
+        font-family: 'Poppins',sans-serif; 
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 100px;
+      }
+      
+      /* Modal content */
+      .modal-content {
+        background-color: #111010;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 5px;
+      }
+      
+      /* Close button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      </style>
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+  </head>
+  <body>
+    <div id="home"></div>
+    <nav class="my_nav">
+      <span class="my_name">ADITYA MISHRA</span>
+      <a href="#" class="my_text">Home</a>
+      <a class="my_text" href="#about">About</a>
+      <a class="my_text" href="#skills">Skills</a>
+      <a class="my_text" href="#services">Services</a>
+      <a class="my_text" href="#portfolio">Portfolio</a>
+      <a class="my_text" style="margin-right: 8vw" href="#contact-id">Contact</a>
+      <!-- <span class="logo-span">
+        <img
+          class="my_logo"
+          src="https://media.licdn.com/dms/image/D4D03AQEiqK1Tps4X0w/profile-displayphoto-shrink_800_800/0/1693033873956?e=1712188800&v=beta&t=WMeUDVx0GMB_S4MV9k4lF0hIiAdJv65DZKtYUTTOz-Q"
+          alt="image"
+      /></span> -->
+    </nav>
+
+    
+
+    <!-- <div class="outer_container"> -->
+    <div class="my_container">
+      <div class="column2">
+        <img class="image" src="ad.jpg" alt="Image" />
+      </div>
+      <div class="column1">
+        <div class="row">
+          <a
+            href="https://www.linkedin.com/in/aditya-mishra-b11a63205/"
+            target="_blank"
+            ><i
+              class="fa-brands fa-linkedin-in fa-xl"
+              style="color: #74c0fc"
+            ></i
+          ></a>
+          &nbsp;&nbsp;
+          <a href="https://github.com/AdityaMishra3648" target="_blank"
+            ><i class="fa-brands fa-github fa-xl" style="color: #74c0fc"></i></a
+          >&nbsp;&nbsp;
+          <a href="https://leetcode.com/Adityamishra3648/" target="_blank"
+            ><i class="fa-solid fa-code fa-xl" style="color: #74c0fc"></i
+          ></a>
+        </div>
+        <div class="row2">Hi, I'am Aditya</div>
+        <div class="row3">
+          <span class="skill-changer">Web Developer</span>
+          <span id="cursor">|</span>
+        </div>
+        <div class="row4">I Am Full-Stack Developer and Django Developer.</div>
+      </div>
+    </div>
+    <div class="container2">
+      <div
+        class="my_responsive-button contact-button"
+        style="height: max(6vh, 2.5vw); width: max(22vh, 12vw)"
+      >
+        Contact Me&nbsp;<i class="fa-solid fa-paper-plane"></i>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+    <div
+      class="about-me-heading row3 text-white"
+      style="font-size: max(3vw, 4.5vh)"
+      id="about"
+    >
+      About Me
+    </div>
+    <div class="row4" style="text-align: center; margin-top: 0px">
+      My Introduction
+    </div>
+    <div class="Intro-container">
+      <img src="ad2.jpg" alt="loading image" class="intro-image" />
+      <div class="intro-text">
+        Hi, My name is Aditya Mishra , I am a second year B.tech student I fell
+        in love with coding during the first semester of my college life and
+        have learned a lot of things on my own apart from learnings in the
+        collage <i class="fa-regular fa-face-laugh-beam"></i><br /><br />
+        I am fluent in classics like
+        <p class="bold">Java , C++ & Javascript</p>
+        My field of Interest's are building new Web Technologies and Products.
+        Whenever possible, I also apply my passion for developing and exploring
+        products with
+        <p class="bold">Node.js,React.js</p>
+        and
+        <p class="bold">Express.js</p>
+        <br />
+        <a href="AdityaMishraResume.pdf" download="AdityaMishraResume.pdf">
+          <button class="my_responsive-button download-cv-button">
+            Download CV<i class="fa-solid fa-download"></i></button
+        ></a>
+      </div>
+    </div>
+    <br />
+    <br />
+
+
+    <div
+      class="row3 text-center pb-0 mb-0 text-white"
+      style="margin-bottom: 0; padding-bottom: 0; font-size: max(3vw, 4.5vh)"
+      id="skills"
+    >
+      Skills
+    </div>
+    <div
+      class="row4 text-center pt-0 mt-0 leading-tight"
+      style="margin-top: 0; padding-top: 0"
+    >
+      My Technical Knowledge
+    </div>
+
+    <!-- start of skills continer -->
+
+    <div class="skills-container">
+      <!-- backend skills -->
+      <div class="flex flex-row items-center mb-2">
+        <div style="font-size: max(3.6vh, 2.5vw)" class="flex-item">
+          <i class="fa-solid fa-chart-simple mr-3"></i>
+        </div>
+        <div class="flex-item">
+          <div style="font-size: max(2.3vh, 1.5vw)" class="leading-tight">
+            Backend Developer
+          </div>
+          <div
+            style="
+              font-size: max(1.5vh, 0.9vw);
+              color: dimgrey;
+              font-weight: 700;
+            "
+            class="leading-tight"
+          >
+            Intermediate
+          </div>
+        </div>
+        <div class="flex-item ml-4 mb-2">
+          <i
+            class="fa-solid fa-chevron-down rotator slow-rotate backend-toggle"
+            style="cursor: pointer"
+          ></i>
+        </div>
+      </div>
+      <div class="backend-info">
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Django</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >60%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Node JS</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >55%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 55%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Mongo DB</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >60%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Express JS</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >40%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+        </div>
+      </div>
+
+      <!-- end of backend skills container -->
+      <!-- start of programmer skills -->
+
+      <div class="flex flex-row items-center mb-2 mt-5">
+        <div style="font-size: max(3.6vh, 2.5vw)" class="flex-item">
+          <i class="fa-solid fa-laptop-code mr-3"></i>
+        </div>
+        <div class="flex-item">
+          <div style="font-size: max(2.3vh, 1.5vw)" class="leading-tight">
+            Programmer
+          </div>
+          <div
+            style="
+              font-size: max(1.5vh, 0.9vw);
+              color: dimgrey;
+              font-weight: 700;
+            "
+            class="leading-tight"
+          >
+            More than 1000 questions
+          </div>
+        </div>
+        <div class="flex-item ml-4 mb-1">
+          <i
+            class="fa-solid fa-chevron-down rotator programmer-toggle"
+            style="cursor: pointer"
+          ></i>
+        </div>
+      </div>
+      <div class="programmer-info hidden">
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Java</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >80%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >C++</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >70%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Javascript</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >60%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Python</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >50%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+        </div>
+      </div>
+
+      <!-- end of programmer skills -->
+      <!-- start of frontend skills -->
+
+      <div class="flex flex-row items-center mb-2 mt-5">
+        <div style="font-size: max(3.6vh, 2.5vw)" class="flex-item">
+          <i class="fa-solid fa-code-compare mr-3"></i>
+        </div>
+        <div class="flex-item">
+          <div style="font-size: max(2.3vh, 1.5vw)" class="leading-tight">
+            Frontend Developer
+          </div>
+          <div
+            style="
+              font-size: max(1.5vh, 0.9vw);
+              color: dimgrey;
+              font-weight: 700;
+            "
+            class="leading-tight"
+          >
+            Intermediate
+          </div>
+        </div>
+        <div class="flex-item ml-4 mb-1">
+          <i
+            class="fa-solid fa-chevron-down rotator frontend-toggle"
+            style="cursor: pointer"
+          ></i>
+        </div>
+      </div>
+      <div class="frontend-info hidden">
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >HTML</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >80%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Css</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >70%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >Javascript</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >60%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span
+            class="text-base font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >React js</span
+          >
+          <span
+            class="text-sm font-medium text-blue-700 dark:text-white text-enhancer-class"
+            >40%</span
+          >
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+          <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+        </div>
+      </div>
+
+      <!-- end of frontend skills -->
+    </div>
+    <br />
+    <br />
+    <br />
+    <div
+      class="row3 text-center pb-0 mb-0 text-white"
+      style="margin-bottom: 0; padding-bottom: 0; font-size: max(3vw, 4.5vh)"
+    >
+      Qualification
+    </div>
+    <div
+      class="row4 text-center pt-0 mt-0 leading-tight"
+      style="margin-top: 0; padding-top: 0"
+    >
+      My personal journey
+    </div>
+    <div class="qualification-container">
+      <!-- component -->
+      <div class="container">
+        <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div
+              class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+            >
+              <h3 class="font-semibold text-lg mb-1">High School</h3>
+              <p class="leading-tight text-justify">
+                SGM International School, <br />
+                Kanpur <br />
+                <i class="fa-solid fa-calendar-days"></i> 2018 - 2019
+              </p>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+              ></div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+              ></div>
+            </div>
+            <div
+              class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+            >
+              <h3 class="font-semibold text-lg mb-1">Intermediate</h3>
+              <p class="leading-tight text-justify">
+                Jai Narayan Vidya Mandir Inter College, <br />
+                Kanpur <br />
+                <i class="fa-solid fa-calendar-days"></i> 2020 - 2021
+              </p>
+            </div>
+          </div>
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div
+              class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+            >
+              <h3 class="font-semibold text-lg mb-1">
+                B.Tech Artificial Intelligence
+              </h3>
+              <p class="leading-tight text-justify">
+                Pranveer Singh Institute of Technology, <br />
+                Kanpur <br />
+                <i class="fa-solid fa-calendar-days"></i> 2022 -
+              </p>
+            </div>
+            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =======================services========================== -->
+    <div
+      class="row3 text-center pb-0 mb-0 text-white"
+      style="margin-bottom: 0; padding-bottom: 0; font-size: max(3vw, 4.5vh)"
+      id="services"
+    >
+      Services
+    </div>
+    <div
+      class="row4 text-center pt-0 mt-0 leading-tight"
+      style="margin-top: 0; padding-top: 0"
+    >
+      What I offer
+    </div>
+
+    <div class="services-container flex flex-wrap flex-row">
+
+      <div
+        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 service-inner"
+      >
+        <div class="p-3">
+          <span>
+            <h5
+              class="mb-2 tracking-tight text-gray-900 dark:text-white"
+            >
+            <i class="fa-solid text-2xl fa-chart-simple mr-3"></i> <br>
+              Web Developer
+            </h5>
+          </a>
+          <button
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            onclick="openModal()"
+          >
+            Read more
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 service-inner"
+      >
+        <div class="p-3">
+          <span>
+            <h5
+              class="mb-2 tracking-tight text-gray-900 dark:text-white"
+            >
+            <i class="fa-solid fa-chart-simple text-2xl mr-3"></i> <br>
+              Backend Developer
+            </h5>
+          </a>
+          <a
+          onclick="openModal2()"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="cursor: pointer;"
+          >
+            Read more
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+      
+
+
+
+      <div
+        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 service-inner"
+      >
+        <div class="p-3">
+          <span>
+            <h5
+              class="mb-2  tracking-tight text-gray-900 dark:text-white"
+            >
+            <i class="fa-solid text-lg fa-chart-simple mr-3"></i> <br>
+              Python Developer
+            </h5>
+          </a>
+          <a
+          onclick="openModal3()"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            style="cursor: pointer;"
+          >
+            Read more
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div
+      class="row3 text-center pb-0 mb-0 text-white"
+      style="margin-bottom: 0; padding-bottom: 0; font-size: max(2.7vw, 4vh); line-height: 1em; margin-top: 13vh;"
+      id="portfolio"
+    >
+      Portfolio
+    </div>
+    <div
+      class="row4 text-center pt-0 mt-0 leading-tight"
+      style="margin-top: 0; padding-top: 0;"
+    >
+      My recent works
+    </div>
+<br>
+<br>
+<br>
+    
+
+<!-- Component: Slider with indicators & controls inside -->
+<div class="recent-work-container">
+<div class="relative w-full glide-03">
+  <!-- Slides -->
+  <div class="overflow-hidden" data-glide-el="track">
+      <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+          <li class="w-full max-w-full max-h-full m-auto">
+            <div class="flex p-4  corosel-controller justify-evenly">
+              <img src="/project_images/front_page.png" class="corosel-image" />
+              <div class="m-2 p-2"><span style="font-size: max(2.5vw,3.2vh); font-weight: bold;">T-Com website</span>
+              <br>
+              <span style="color: dimgrey; font-size: max(1vw,1.7vh);">
+                This is a website that I made for my collage students here they can exhange, borrow and buy stuff between each other and also rate others product. I used Django, Bootstrap, ,JS and other libraries for this project. 
+              </span>
+              <br>
+              <a href="https://adityamishra3648.pythonanywhere.com/" target="_blank"><button type="button" class="mt-2 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Demo <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+            </div>
+           </li>
+          <li class="w-full max-w-full max-h-full m-auto">
+            <div class="flex p-4  corosel-controller justify-evenly">
+              <img src="/project_images/to_do_listss.png" class="corosel-image" />
+              <div class="m-2 p-2"><span style="font-size: max(2.5vw,3.2vh); font-weight: bold;">TODO List</span>
+              <br>
+              <span style="color: dimgrey; font-size: max(1vw,1.7vh);">
+                Above I have created a TODO list website using react and tailwind.
+              </span>
+              <br>
+              <a href="https://todolist3648.netlify.app/" target="_blank"><button type="button" class="mt-2 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Demo <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+            </div>
+           </li>
+          <li class="w-full max-w-full max-h-full m-auto">
+            <div class="flex p-4  corosel-controller justify-evenly">
+              <img src="/project_images/password_generator.png" class="corosel-image" />
+              <div class="m-2 p-2"><span style="font-size: max(2.5vw,3.2vh); font-weight: bold;">Password Generator</span>
+              <br>
+              <span style="color: dimgrey; font-size: max(1vw,1.7vh);">
+                Above i have created website to generate random password with option to include special chars adn length. 
+              </span>
+              <br>
+              <a href="https://password-generator3648.netlify.app/" target="_blank"><button type="button" class="mt-2 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Demo <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+            </div>
+           </li>
+      </ul>
+  </div>
+  <!-- Controls -->
+  <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 " data-glide-el="controls">
+      <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+              <title>prev slide</title>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+          </svg>
+      </button>
+      <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+              <title>next slide</title>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+      </button>
+  </div>
+  <!-- Indicators -->
+  <div class="absolute bottom-0 flex items-center justify-center w-full gap-2" data-glide-el="controls[nav]">
+      <button class="p-4 group" data-glide-dir="=0" aria-label="goto slide 1"><span class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+      <button class="p-4 group" data-glide-dir="=1" aria-label="goto slide 2"><span class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+      <button class="p-4 group" data-glide-dir="=2" aria-label="goto slide 3"><span class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+      <button class="p-4 group" data-glide-dir="=3" aria-label="goto slide 4"><span class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+  </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+
+<script>
+  var glide03 = new Glide('.glide-03', {
+      type: 'slider',
+      focusAt: 'center',
+      perView: 1,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 0,
+      classes: {
+          activeNav: '[&>*]:bg-slate-700',
+      },
+
+  });
+
+  glide03.mount();
+</script>
+<!-- End Slider with indicators & controls inside -->
+
+
+
+
+<!-- ===============================contact me section===================================================== -->
+
+
+
+
+  <section class="bg-white " style="background-color: #222627;">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md" style="font-family: 'Poppins',sans-serif ;" id="contact-id">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Get in touch</p>
+
+        <ul class="mb-6 md:mb-0 contact-me-container">
+          <li class="flex right-margin">
+              <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="h-6 w-6">
+                      <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                      <path
+                          d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                      </path>
+                  </svg>
+              </div>
+              <div class="ml-4 mb-4">
+                  <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Location
+                  </h3>
+                  <p class="text-gray-600 dark:text-slate-400">Kanpur, India</p>
+              </div>
+          </li>
+          <li class="flex left-margin">
+              <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="h-6 w-6">
+                      <path
+                          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                      </path>
+                      <path d="M15 7a2 2 0 0 1 2 2"></path>
+                      <path d="M15 3a6 6 0 0 1 6 6"></path>
+                  </svg>
+              </div>
+              <div class="ml-4 mb-4">
+                  <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact
+                  </h3>
+                  <p class="text-gray-600 dark:text-slate-400">(+91) 6307104139</p>
+                  <p class="text-gray-600 dark:text-slate-400">adityamishra7136@gmail.com</p>
+              </div>
+          </li>
+      </ul>
+        <form class="space-y-8" onsubmit="sendmail(); return false;">
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light person-mail" placeholder="name@gmail.com" required>
+            </div>
+            <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light product-name" placeholder="subject " required>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 my-mess" placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-blue-500 submit-button ">Send message</button>
+        </form>
+      </div>
+    </section>
+    
+    
+
+
+    <button onclick="openModal()">Open Modal</button>
+<!-- Modal container -->
+<div id="myModal" class="modal-container">
+  <!-- Modal content -->
+  <div class="modal-content">
+  </div>
+</div>
+
+    <!-- ========================footer============================= -->
+
+    
+    <div class="footer items-center justify-center flex">
+      &copy;AdityaMishra. All rights reserved.
+    </div>
+
+
+    <!-- modal js -->
+    <script>
+      // Function to open the modal
+      function openModal() {
+        document.querySelector('.modal-content').innerHTML = `<span class="close" onclick="closeModal()">&times;</span>
+    <h1 style="font-size: xx-large; font-weight: 600;">Web Developer</h1>
+    <br><br>
+    <ul>
+      <li>I Develop the User Interface.</li><br>
+      <li>Webpage development.</li><br>
+      <li>I can handle Backend part</li><br>
+      <li>I have Intermediate level knowledge of React framework</li><br>
+      <li>I have knowledge in MERN</li>
+    </ul>`
+        document.getElementById('myModal').style.display = "block";
+      }
+      function openModal2() {
+        document.querySelector('.modal-content').innerHTML = `<span class="close" onclick="closeModal()">&times;</span>
+    <h1 style="font-size: xx-large; font-weight: 600;">Backend Developer</h1>
+    <br><br>
+    <ul>
+      <li>I Develop the backend logic.</li><br>
+      <li>API Development.</li><br>
+      <li>I can handle the database.</li><br>
+      <li>I have Intermediate level knowledge in Express.</li><br>
+      <li>I have intermediate level knowledge in Django</li><br>
+      <li>I have intermediate level knowledge in SQL</li>
+    </ul>`
+        document.getElementById('myModal').style.display = "block";
+      }
+
+      function openModal3() {
+        document.querySelector('.modal-content').innerHTML = `<span class="close" onclick="closeModal()">&times;</span>
+    <h1 style="font-size: xx-large; font-weight: 600;">Python Developer</h1>
+    <br><br>
+    <ul>
+      <li>I can use core python.</li><br>
+      <li>I can handle data in pandas.</li><br>
+      <li>I use numpy.</li><br>
+      <li>I can develop GUI using Tkinter of python.</li><br>
+      <li>I have intermediate level knowledge in Django</li><br>
+    </ul>`
+        document.getElementById('myModal').style.display = "block";
+      }
+      
+      // Function to close the modal
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+      </script>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <!-- <script>
+      function send(){
+        alert("function called");
+        Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "ambuj3648mishra@gmail.com",
+          Password : "newpass1234@",
+          To : 'adityamishra7136@gmail.com',
+          From : "mk6748134@gmail.com"/*document.getElementById("email").value*/,
+          Subject : "subject"/*document.querySelector("#subject").value*/,
+          Body : "aksnd" /*document.querySelector("#message").value*/
+
+        }).then(
+        message => alert(message)
+        ).catch((error)=>{
+          alert(error);
+        })
+      }
+    </script> -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("0Vxf_FoK0_mfu3cB8");
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.0/dist/emailjs-com.min.js"></script>
+    <script>
+      function sendmail(){
+      var params = {
+          seller_name : "Aditya mishra",
+          my_name : "Someone",
+          product_name : "demo",
+          my_mail : document.querySelector("#email").value,
+          seller_mail: "mk6748134@gmail.com",
+          mess: `subject : ${document.querySelector("#subject").value} and message : ${document.querySelector("#message").value}`
+      };
+      const service_id = "service_6sxn973";
+      const template_id = "template_5vclz9r";
+      emailjs.send(service_id,template_id,params)
+      .then(res=>{
+  
+           document.querySelector("#email").value = "";
+           document.querySelector("#subject").value = "";
+           document.querySelector("#message").value = "";
+           alert("sent successfully!");
+      }).catch(err=>{
+          alert("some error occured");
+      });
+  }
+  </script>
+    <script
+      src="https://kit.fontawesome.com/8e9e9836de.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
