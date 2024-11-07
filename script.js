@@ -72,32 +72,32 @@ rotator.forEach(element => {
 });
 
 
-// let submit_button = document.querySelector(".submit-button");  
-// submit_button.addEventListener('submit',function(event){
-//     event.preventDefault();
-//     sendmail();
-// })
-// emailjs.init("service_6sxn973");
-// function sendmail(){
-//     emailjs.init("service_6sxn973");
-//     var params = {
-//         seller_name : document.querySelector(".seller-name").innerHTML,
-//         my_name : "Aditya Mishra",
-//         product_name : document.querySelector(".product-name").innerHTML,
-//         my_mail : document.querySelector(".person-mail").innerHTML,
-//         seller_mail: "mk6748134@gmail.com",
-//         mess: document.querySelector(".my-mess").value
-//     };
-//     const service_id = "service_6sxn973";
-//     const template_id = "template_5vclz9r";
-//     emailjs.send(service_id,template_id,params)
-//     .then(res=>{
+let submit_button = document.querySelector(".submit-button");  
+submit_button.addEventListener('submit',function(event){
+    event.preventDefault();
+    sendmail();
+})
+emailjs.init("service_6sxn973");
+function sendmail(){
+    emailjs.init("service_6sxn973");
+    var params = {
+        seller_name : document.querySelector(".seller-name").innerHTML,
+        my_name : "Aditya Mishra",
+        product_name : document.querySelector(".product-name").innerHTML,
+        my_mail : document.querySelector(".person-mail").innerHTML,
+        seller_mail: "mk6748134@gmail.com",
+        mess: document.querySelector(".my-mess").value
+    };
+    const service_id = "service_6sxn973";
+    const template_id = "template_5vclz9r";
+    emailjs.send(service_id,template_id,params)
+    .then(res=>{
 
-//          document.querySelector(".seller-name").value = "";
-//          document.querySelector(".product-name").value = "";
-//          document.querySelector(".person-mail").value = "";
-//         alert("request sent to the seller successfully");
-//     }).catch(err=>{
-//         alert("some error occured");
-//     });
-// }
+         document.querySelector(".seller-name").value = "";
+         document.querySelector(".product-name").value = "";
+         document.querySelector(".person-mail").value = "";
+        alert("request sent to the seller successfully");
+    }).catch(err=>{
+        alert("some error occured");
+    });
+}
