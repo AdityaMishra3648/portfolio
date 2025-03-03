@@ -8,9 +8,9 @@ let frontend_info = document.querySelector('.frontend-info');
 const skills = [
     'Backend Developer',
     'Programmer',
-    'Django Developer',
+    'Spring Boot Developer',
     'Web Developer',
-    'Python Developer',
+    'React.js Developer',
   ];
   let i = 0;
   let n = skills.length;
