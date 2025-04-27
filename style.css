@@ -175,6 +175,8 @@ body{
     max-width: 60vw;
     width: 60vh;
     border-radius: 5%;
+    object-fit: cover;
+
   }
   .intro-text{
     font-family: 'Poppins',sans-serif; 
